@@ -239,7 +239,7 @@ jobs:
         shell: bash
         run: |
           set -e
-          curl -fL -o sentinela-512.png https://app.microtechapp.com/marca/icone-512.png
+          curl -fL -o sentinela-512.png https://app.microtechapp.com/app/icone-suporte-512.png
           if command -v magick >/dev/null 2>&1; then MG=magick; else MG="/c/Program Files/ImageMagick-7.1.1-Q16-HDRI/magick.exe"; fi
           "$MG" sentinela-512.png -background none -define icon:auto-resize=256,128,96,64,48,32,16 sentinela.ico
           cp -f sentinela.ico flutter/windows/runner/resources/app_icon.ico
